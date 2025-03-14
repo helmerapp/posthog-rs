@@ -40,10 +40,7 @@ impl FeatureFlagPayload {
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct DecideRequestData {
-    #[serde(rename = "api_key")]
     pub api_key: String,
-
-    #[serde(rename = "distinct_id")]
     pub distinct_id: String,
 }
 
